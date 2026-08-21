@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 04 - Formulario de Matrícula</title>
+    <link href="plantilla/plantilla/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-primary text-white py-3">
+                        <h4 class="m-0">Formulario de Matrícula</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <form>
+                            <div class="row g-3">
+                                <!-- Nombres 6 col / Apellidos 6 col -->
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">Nombres</label>
+                                    <input type="text" class="form-control" placeholder="Ej. Juan Carlos">
+                                </div>
+    <div class="col-12 col-md-6">
+   <label class="form-label">Apellidos</label>
+    <input type="text" class="form-control" placeholder="Ej. Pérez Gómez">
+     </div>
+
+     <!-- DNI 4 col / Teléfono 4 col / Carrera 4 col -->
+                                <div class="col-12 col-md-4">
+                                    <label class="form-label">DNI</label>
+                                    <input type="text" class="form-control" maxlength="8" placeholder="8 dígitos">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <label class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" placeholder="987654321">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <label class="form-label">Carrera</label>
+                                    <select class="form-select">
+                                        <option selected>Seleccionar...</option>
+                                        <option>Desarrollo de Sistemas</option>
+                                        <option>Administración</option>
+                                        <option>Contabilidad</option>
+                                    </select>
+                                </div>
+
+                                <!-- Dirección 12 col -->
+                                <div class="col-12">
+                                    <label class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" placeholder="Av. Principal #123">
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-end gap-2 mt-2">
+                                    <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                                    <button type="submit" class="btn btn-primary">Registrar Matrícula</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="plantilla/plantilla/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

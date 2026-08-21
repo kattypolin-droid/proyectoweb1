@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 03 - Landing Page de Planes</title>
+    <link href="plantilla/plantilla/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-pro {
+            transform: scale(1.08);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Elige tu Plan de Suscripción</h2>
+        <div class="row align-items-center g-4">
+
+            <!-- Plan Básico -->
+            <div class="col-12 col-md-4">
+                <div class="card text-center shadow-sm border-0 p-3">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Básico</h5>
+                        <p class="text-muted mb-0">S/ 50 / mes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan PRO (destacado, mayor padding y escala) -->
+            <div class="col-12 col-md-4">
+                <div class="card card-pro text-center shadow-lg border-0 p-4 bg-primary text-white rounded-4">
+                    <div class="card-body">
+                        <h4 class="fw-bold">PRO</h4>
+                        <p class="mb-0 fs-5">S/ 120 / mes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan Premium -->
+            <div class="col-12 col-md-4">
+                <div class="card text-center shadow-sm border-0 p-3">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Premium</h5>
+                        <p class="text-muted mb-0">S/ 200 / mes</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="plantilla/plantilla/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
