@@ -1,18 +1,116 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<style>
-    .bg{
-        background-color:tan;
-    }
-</style>  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice Completo de Casos y Retos</title>
+    <style>
+    :root{
+  --bg:#0f172a;
+  --panel:rgba(30,41,59,.7);
+  --text:#f8fafc;
+  --muted:#94a3b8;
+  --primary:#38bdf8;
+  --primary-2:#818cf8;
+  --border:rgba(255,255,255,.08);
+}
+body{
+  font-family:'Segoe UI',system-ui,sans-serif;
+  max-width:680px;
+  margin:40px auto;
+  padding:0 20px;
+  background:var(--bg);
+  color:var(--text);
+}
+h1{
+  font-size:1.8rem;
+  margin-bottom:24px;
+  background:linear-gradient(90deg,var(--primary),var(--primary-2));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+h2{
+  font-size:1.1rem;
+  color:var(--muted);
+  margin:28px 0 12px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+li{
+  background:var(--panel);
+  backdrop-filter:blur(8px);
+  margin:10px 0;
+  padding:14px 18px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition:.2s;
+}
+li:hover{
+  transform:translateX(6px);
+  border-color:var(--primary);
+  box-shadow:0 4px 20px rgba(56,189,248,.15);
+}
+a{
+  text-decoration:none;
+  color:#f1f5f9;
+  font-weight:600;
+}
+.badge{
+  font-size:.75rem;
+  font-weight:700;
+  padding:4px 10px;
+  border-radius:20px;
+  background:rgba(56,189,248,.15);
+  color:var(--primary);
+  border:1px solid rgba(56,189,248,.3);
+}
+.badge-pdf{
+  background:rgba(244,63,94,.15);
+  color:#fb7185;
+  border-color:rgba(244,63,94,.3);
+}
+.badge-css{
+  background:rgba(168,85,247,.15);
+  color:#c084fc;
+  border-color:rgba(168,85,247,.3);
+}
+.badge-js{
+  background:rgba(250,204,21,.15);
+  color:#facc15;
+  border-color:rgba(250,204,21,.3);
+}
+</style>
 </head>
-  <body>
-    <h1 class="text-primary bg">¡Hola, Mundo!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+<body>
+    <h1> Índice General de Archivos</h1>
+    <h2>Casos Prácticos</h2>
+    <ul>
+        <li><a href="caso1.html" target="_blank">Caso 1</a> <span class="badge">HTML</span></li>
+        <li><a href="caso2.html" target="_blank">Caso 2</a> <span class="badge">HTML</span></li>
+        <li><a href="caso3.html" target="_blank">Caso 3</a> <span class="badge">HTML</span></li>
+        <li><a href="caso4.html" target="_blank">Caso 4</a> <span class="badge">HTML</span></li>
+    </ul>
+    <h2> Retos</h2>
+    <ul>
+        <li><a href="reto1.html" target="_blank">Reto 1</a> <span class="badge">HTML</span></li>
+        <li><a href="reto2.html" target="_blank">Reto 2</a> <span class="badge">HTML</span></li>
+        <li><a href="reto3.html" target="_blank">Reto 3</a> <span class="badge">HTML</span></li>
+        <li><a href="reto4.html" target="_blank">Reto 4</a> <span class="badge">HTML</span></li>
+    </ul>
+    <h2> Estructuras y Plantillas</h2>
+    <ul>
+        <li><a href="container.html" target="_blank">Container HTML</a> <span class="badge">HTML</span></li>
+        <li><a href="segundo metodo.html" target="_blank">metodo HTML</a> <span class="badge">HTML</span></li>
+        <li><a href="index.html" target="_blank">index HTML</a> <span class="badge">HTML</span></li>
+    </ul>
+</body>
 </html>
